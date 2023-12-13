@@ -51,13 +51,14 @@ header
     border-radius: 10px;
     width: 185px;
     height: 315px;
+    max-height: 315px;
     color: blue;
     margin: 1% 1% 1% 6px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     
 }
 .stories:hover
@@ -71,7 +72,8 @@ main
     margin-left: max(101px, 16%);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: last baseline;
     flex-grow: 1;
     align-items: baseline;
 }
@@ -176,10 +178,15 @@ li a, .dropbtn {
 }
 .title p
 {
-    background-color: red;
     
     width: 100%;
-    bottom: 0;
+    
     font-size: 1rem;
     
+}
+.title{
+    /* background-color: red; */
+    height: 20%;
+    bottom: 0;
+
 }

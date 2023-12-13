@@ -22,7 +22,7 @@ function displayStories(stories) {
       `</div>
     </div>`;
   }
-  console.log(main_text);
+  // console.log(main_text);
   document.querySelector("main") .innerHTML = main_text;
 }
 
@@ -33,3 +33,60 @@ async function execute() {
 }
 
 execute();
+
+// categories
+let categoriesArray = [
+  "Divine Intervention",
+  "Old Testament",
+  "New Testament",
+  "Forgiveness",
+  "Judgement",
+  "Covenant",
+  "Battle",
+  "Law",
+  "Parable",
+  "Encounter",
+  "Deliverance",
+  "Miracle",
+  "Faithfulness",
+  "Repentance",
+  "Revelation"
+];
+let categories_text = '';
+
+for (let i = 0; i < categoriesArray.length; i++) {
+  categories_text += 
+  `<div>
+      <span class="show"> 
+          <button onclick="showResult('${categoriesArray[i]}')">${categoriesArray[i]}</button>
+      </span>
+  </div>`;
+}
+
+
+document.querySelector(".nav").innerHTML = categories_text;
+
+function showResult(category) {
+  var main_text = '';
+  for (var i = 0; i < storiesArray.length; i++) {
+    // Check each category of the story
+    for (var j = 0; j < storiesArray[i].metadata.categories.length; j++) {
+        if(storiesArray[i].metadata.categories[j] === category) {
+            main_text += 
+            `<div class="stories">` +
+                `<img class = poster src="image.png" alt="404 image not found">` +
+                `<div class="title">` +
+                    `<p>${storiesArray[i].title}</p>` +
+                `</div>
+            </div>`;
+            // Break the loop after finding a match
+            
+        }
+    }
+}
+
+  console.log(main_text);
+  document.querySelector("main").innerHTML = main_text;
+}
+
+
