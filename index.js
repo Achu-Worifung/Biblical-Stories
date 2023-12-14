@@ -22,6 +22,11 @@ function displayStories(stories) {
       `</div>
     </div>`;
   }
+  main_text += ` 
+  <footer>
+    <hr>           
+     <a href="index.html">Home</a> | <a href="aboutUs.html">About Us |</a>  <a href="Sugestion.html">Suggest A Story</a> | <a href         
+  </footer>`;
   // console.log(main_text);
   document.querySelector("main") .innerHTML = main_text;
 }
@@ -52,7 +57,7 @@ let categoriesArray = [
   "Repentance",
   "Revelation"
 ];
-let categories_text = '';
+let categories_text = document.querySelector("nav").innerHTML;
 
 for (let i = 0; i < categoriesArray.length; i++) {
   categories_text += 
