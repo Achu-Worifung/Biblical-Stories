@@ -15,8 +15,8 @@ function displayStories(stories) {
   var main_text = '';
   for (var i = 0; i < stories.length; i++) {
     main_text += 
-    `<div class="stories">` +
-      `<img class = poster src="image.png" alt="404 image not found">` +
+    `<div class="stories" onclick = openPopup()>` +
+      `<img class = poster src="image.png" alt="404 image not found" onclick = showStory(${i})>` +
       `<div class="title">` +
         `<p>${stories[i].title}</p>` +
       `</div>
@@ -73,7 +73,7 @@ function showResult(category) {
     for (var j = 0; j < storiesArray[i].metadata.categories.length; j++) {
         if(storiesArray[i].metadata.categories[j] === category) {
             main_text += 
-            `<div class="stories">` +
+            `<div class="stories" >` +
                 `<img class = poster src="image.png" alt="404 image not found">` +
                 `<div class="title">` +
                     `<p>${storiesArray[i].title}</p>` +
@@ -89,4 +89,25 @@ function showResult(category) {
   document.querySelector("main").innerHTML = main_text;
 }
 
+function showStory(index)
+{
+  
+}
 
+
+            // Get the popup
+var popup = document.getElementById("myPopup");
+
+// Get the close button
+var close = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the close button, close the popup
+// close.onclick = function() {
+//     popup.style.display = "none";
+// }
+
+// Function to open the popup
+function openPopup() {
+  console.log("Popup opened");
+    popup.style.display = "block";
+}
