@@ -211,10 +211,38 @@ li a, .dropbtn {
 
 /* The popup content */
 .popup-content {
+    
     background-color: #fefefe;
-    margin: 15% auto; 
+    margin: 2% auto; 
     padding: 20px;
     border: 1px solid #888;
     width: 80%; 
+    height: 80%;
+    overflow: auto;
     /* background-color: red; */
+}
+.close {
+    color: #aaaaaa;
+    
+    font-size: 28px; /* Adjust this value to change the size of the close button */
+    font-weight: bold;
+}
+.close:hover {
+    background-color: gray;
+    color: white;
+    border-radius: 2px;
+    cursor:pointer;
+}
+
+/* for the popup content */
+.displayHeading {
+    text-align: center;
+}
+.displayImage{
+    float: left;
+    margin: 5px;
+    border-radius: 5px;
+    /* padding: 10px;
+    background-color: red; */
+
 }

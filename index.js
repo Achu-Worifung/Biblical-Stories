@@ -73,13 +73,13 @@ function showResult(category) {
     for (var j = 0; j < storiesArray[i].metadata.categories.length; j++) {
         if(storiesArray[i].metadata.categories[j] === category) {
             main_text += 
-            `<div class="stories" >` +
+            `<div class="stories" onclick = showStory(${i})>` +
                 `<img class = poster src="image.png" alt="404 image not found">` +
                 `<div class="title">` +
                     `<p>${storiesArray[i].title}</p>` +
                 `</div>
             </div>`;
-            // Break the loop after finding a match
+           
             
         }
     }
@@ -91,7 +91,16 @@ function showResult(category) {
 
 function showStory(index)
 {
+  // <img class = poster src="${storiesArray[index].image}" alt="image.png" >
+  let story = `
+  <span class="close" onclick="closePopup()">&times;</span>
+  <h2 class="displayHeading">${storiesArray[index].title} ( ${storiesArray[index].reference} )</h2>
   
+    <img src="image.png" class="displayImage" alt="image.png">
+    ${storiesArray[index].content}
+    
+  `;
+  document.querySelector(".popup-content").innerHTML = story;
 }
 
 
@@ -111,3 +120,9 @@ function openPopup() {
   console.log("Popup opened");
     popup.style.display = "block";
 }
+
+function closePopup() {
+  console.log("Popup closed");
+    popup.style.display = "none";
+}
+
