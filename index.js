@@ -98,11 +98,12 @@ function showStory(index)
 {
   // <img class = poster src="${storiesArray[index].image}" alt="image.png" >
   let story = `
-  <span class="close" onclick="closePopup()">&times;</span>
+  <span class="close" onclick="closePopup(event)">&times;</span>
   <h2 class="displayHeading">${storiesArray[index].title} ( ${storiesArray[index].reference} )</h2>
-  
-    <img src="image.png" class="displayImage" alt="image.png">
-    ${storiesArray[index].content}
+    
+      <img src="image.png" class="displayImage" alt="image.png" >
+      ${storiesArray[index].content}
+    
     
   `;
   document.querySelector(".popup-content").innerHTML = story;
@@ -126,8 +127,15 @@ function openPopup() {
     popup.style.display = "block";
 }
 
-function closePopup() {
+function closePopup(event) {
+  // console.log(event.target.classList);
+
+  // Check if the target element has either "popup" or "close" class
+  if (!(event.target.classList.contains("popup") || event.target.classList.contains("close"))) {
+    return;
+  }
+
   console.log("Popup closed");
-    popup.style.display = "none";
+  popup.style.display = "none";
 }
 
