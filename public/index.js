@@ -1,5 +1,6 @@
 let storiesArray;
 let main_text = '';
+let currCategory = '';
 async function fetchData() {
   try {
       const response = await fetch('./stories.json');
@@ -29,7 +30,7 @@ function displayStories(stories) {
 
 async function execute() {
   await fetchData(); // Wait until fetchData() is done
-  console.log(storiesArray); // Log the array to the console
+  // console.log(storiesArray); // Log the array to the console
   displayStories(storiesArray); // Call displayStories() after fetchData() is done
 }
 
@@ -69,25 +70,29 @@ document.querySelector(".nav").innerHTML = categories_text;
 
 function showResult(category) {
   var main_text = '';
+  currCategory = `| ` +category;
+  
   for (var i = 0; i < storiesArray.length; i++) {
     // Check each category of the story
     for (var j = 0; j < storiesArray[i].metadata.categories.length; j++) {
-        if(storiesArray[i].metadata.categories[j] === category) {
-            main_text += 
-            `<div class="stories" onclick = showStory(${i})>` +
-                `<img class = poster src="${storiesArray[i].image}" alt="404 image not found">` +
-                `<div class="title">` +
-                    `<p>${storiesArray[i].title}</p>` +
-                `</div>
-            </div>`;
-           
-            
-        }
+      if(storiesArray[i].metadata.categories[j] === category) {
+        main_text += 
+        `<div class="stories" onclick = showStory(${i})>` +
+        `<img class = poster src="${storiesArray[i].image}" alt="404 image not found">` +
+        `<div class="title">` +
+        `<p>${storiesArray[i].title}</p>` +
+        `</div>
+        </div>`;
+        
+        
+      }
     }
-}
-
-  console.log(main_text);
+  }
+  
   document.querySelector("main").innerHTML = main_text;
+  
+  // console.log(main_text);
+  changeTitle(currCategory);
 }
 
 function showStory(index)
@@ -103,6 +108,10 @@ function showStory(index)
     
   `;
   document.querySelector(".popup-content").innerHTML = story;
+  openPopup();
+  // console.log(story);
+  // console.log("i am in story");
+   changeTitle(`| `+storiesArray[index].title);
 }
 
 
@@ -119,7 +128,7 @@ var close = document.getElementsByClassName("close")[0];
 
 // Function to open the popup
 function openPopup() {
-  console.log("Popup opened");
+  // console.log("Popup opened");
     popup.style.display = "block";
 }
 
@@ -131,7 +140,13 @@ function closePopup(event) {
     return;
   }
 
-  console.log("Popup closed");
+  // console.log("Popup closed");
   popup.style.display = "none";
+  changeTitle(currCategory);
 }
 
+function changeTitle(newTItle)
+{
+  document.title = `EpicBibleStories ${newTItle}`;
+
+}
