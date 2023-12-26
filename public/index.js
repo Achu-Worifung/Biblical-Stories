@@ -150,3 +150,41 @@ function changeTitle(newTItle)
   document.title = `EpicBibleStories ${newTItle}`;
 
 }
+
+// scroll for smaller screens
+let scrollContainer;
+
+function checkScreenSizeAndScroll() {
+  console.log('scroll');
+  let screenWidth = window.innerWidth;
+  scrollContainer = document.querySelector("nav");
+
+  if (scrollContainer) {
+     scrollContainer.removeEventListener("wheel", horizontalScrollHandler);
+    scrollContainer.removeEventListener("wheel", verticalScrollHandler);
+  }
+  if(screenWidth < 650) {
+    scrollContainer.addEventListener("wheel", horizontalScrollHandler);
+  } else {
+    scrollContainer.addEventListener("wheel", verticalScrollHandler);
+  }
+}
+
+function horizontalScrollHandler(evt) {
+  evt.preventDefault();
+  let delta = Math.sign(evt.deltaY) * -50;
+  this.scrollLeft += delta;
+}
+
+function verticalScrollHandler(evt) {
+  evt.preventDefault();
+   let delta = Math.sign(evt.deltaY) * 50;
+  this.scrollTop += delta;
+}
+
+window.onload = checkScreenSizeAndScroll;
+window.onresize = checkScreenSizeAndScroll;
+
+
+
+
