@@ -1,0 +1,111 @@
+@media screen and (max-width: 650px) {
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    main{
+        width: 100%;
+        margin: 0px;
+        margin-top: 51px;
+
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        width:100vw;
+        height: 50px;
+        position: fixed;
+        overflow-y:hidden;
+        /* align-items: baseline; */
+        margin: 0;
+        padding: 0;
+        overflow-x: scroll;
+        
+    
+    }
+    nav button
+    {
+        margin: 0;
+        padding: 0;
+        width: 112px;
+        min-height: 50px;
+        
+    }
+    button{
+        height: 50px;
+    }
+    object
+    {
+        display: block; 
+        max-width: 100%; 
+        height: auto; /* Maintain the aspect ratio */
+        cursor: pointer;
+    }
+    .show
+    {
+        padding: 0;
+        margin: 0;
+        flex-direction: row;
+    }
+    
+    
+    .target
+    {
+      /* color:rebeccapurple; */
+    background-image: url("biblelogo.svg");
+    cursor: pointer;
+    font-size: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    .target p{
+        display: none;
+    }
+    
+
+    .popup-content {
+    
+        background-color: #fefefe;
+        margin: 1% auto; 
+        padding: 0;
+        border: 1px solid #888;
+        width: 100%; 
+        height: 100%;
+        overflow: auto;
+        /* background-color: red; */
+    }
+    .close {
+        color: #aaaaaa;
+        
+        font-size: 60px; /* Adjust this value to change the size of the close button */
+        font-weight: bold;
+    }
+    .close:hover {
+        background-color: gray;
+        color: white;
+        border-radius: 2px;
+        cursor:pointer;
+    }
+    h2.displayHeading
+    {
+        margin-top: 0;
+        font-size:larger;
+    }
+    .stories
+    {
+    width: min(145px, 45vw);
+    height: min(275px, 45vh);
+    }
+
+    .main-content {
+        min-height: 100%;
+        display: grid;
+        grid-template-rows: auto 40px;
+    
+      }
+    
+
+    
+  } 

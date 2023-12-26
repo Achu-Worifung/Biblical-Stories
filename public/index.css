@@ -86,7 +86,10 @@ header
 main
 {
     /* margin-left:16% ; */
-    margin-left: max(101px, 16%);
+    /* margin-left: max(101px, 16%); */
+    margin: 0;
+    padding: 0;
+    width: 100%;
    background-color: var(--background-color);;
     display: flex;
     flex-wrap: wrap;
@@ -94,7 +97,28 @@ main
     /* justify-content: last baseline; */
     flex-grow: 1;
     align-items: baseline;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+}
+.target
+{
+    /* color:rebeccapurple; */
+    font-size: small;
+    background-image: url("biblelogo.svg");
+    background-position:center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.target p
+{
+    position: relative;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
 
 nav
@@ -239,7 +263,7 @@ li a, .dropbtn {
     margin: 2% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 50%; 
+    width: 60%; 
     height: 80%;
     overflow: auto;
     /* background-color: red; */
@@ -264,9 +288,7 @@ li a, .dropbtn {
 .displayImage{
     float: left;
     margin: 5px;
-    /* border-radius: 5px; */
-    /* padding: 10px;
-    background-color: red; */
+    width: 50%;
 
 }
 hr
@@ -275,12 +297,7 @@ hr
     color:black;
     z-index: 1;
 }
-footer
-{
-    height: 100px;
-    width: 100%;
-    /* background-color: red; */
-}
+
 hr{
     width: 98%;
     background-color: black;
@@ -291,4 +308,21 @@ a
 {
     text-decoration: none;
 }
+footer{
+    color:var(--text-color);
+    background-color: var(--nav-color);
+    text-align: center;
+}
 
+
+.main-content {
+    width: calc(100vw - max(101px, 16%));
+    margin-left:max(101px, 16%);
+    display: grid;
+    grid-template-rows: auto 40px;
+    grid-template-columns: auto;
+    overflow-x: hidden;
+
+  }
+
+  
