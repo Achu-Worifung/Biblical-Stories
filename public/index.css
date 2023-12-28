@@ -102,7 +102,7 @@ main
 .target
 {
     /* color:rebeccapurple; */
-    font-size: small;
+    font-size: 10px;
     background-image: url("biblelogo.svg");
     background-position:center;
     background-repeat: no-repeat;
@@ -137,7 +137,7 @@ nav
     position: fixed;
     overflow-x: hidden;
     min-width: 100px;
-    font-size: .7em;
+    /* font-size: .1em; */
     
 }
 
@@ -219,14 +219,17 @@ li a, .dropbtn {
 
 .poster 
 {
-    background-color: black;
+    /* background-color: black; */
     /* border-radius: 10px 10px 0 0; */
     width: 100%;
     height: 80%;
     top:0;
     /* object-fit: cover; */
-    object-fit: scale-down;
-    object-position: center;
+    /* object-fit: contain; */
+    /* object-fit: scale-down; */
+    /* object-fit: none; */
+    /* object-position: 50% 20%; */
+    /* object-fit: center; */
     
 }
 .title p

@@ -15,9 +15,11 @@ function displayStories(stories) {
   // Your logic to display or use the processed data goes here
   var main_text = '';
   for (var i = 0; i < stories.length; i++) {
+    console.log('here');
+    console.log(stories[i].position);
     main_text += 
     `<div class="stories" onclick = openPopup()>` +
-      `<img class = poster src="${stories[i].image}" alt="404 image not found" onclick = showStory(${i})>` +
+      `<img class="poster" src="${stories[i].image}" alt="404 image not found" onclick="showStory(${i})" style="object-fit:${stories[i].fit}; object-position:${stories[i].position};"> ` +
       `<div class="title">` +
         `<p>${stories[i].title}</p>` +
       `</div>

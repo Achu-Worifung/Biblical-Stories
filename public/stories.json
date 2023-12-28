@@ -6,9 +6,23 @@
       "reference": "Genesis 1:1-2:3",
       "content": "In the beginning God created the heavens and the earth. 2The earth was formless and empty, and darkness covered the deep waters. And the Spirit of God was hovering over the surface of the waters. 3Then God said, \"Let there be light,\" and there was light. 4And God saw that the light was good. Then he separated the light from the darkness. 5God called the light \"day\" and the darkness \"night.\" And evening passed and morning came, marking the first day. 6Then God said, \"Let there be a space between the waters, to separate the waters of the heavens from the waters of the earth.\" 7And that is what happened. God made this space to separate the waters of the earth from the waters of the heavens. 8God called the space \"sky.\" And evening passed and morning came, marking the second day. 9Then God said, \"Let the waters beneath the sky flow together into one place, so dry ground may appear.\" And that is what happened. 10God called the dry ground \"land\" and the waters \"seas.\" And God saw that it was good. 11Then God said, \"Let the land sprout with vegetation—every sort of seed-bearing plant, and trees that grow seed-bearing fruit. These seeds will then produce the kinds of plants and trees from which they came.\" And that is what happened. 12The land produced vegetation—all sorts of seed-bearing plants, and trees with seed-bearing fruit. Their seeds produced plants and trees of the same kind. And God saw that it was good. 13And evening passed and morning came, marking the third day. 14Then God said, \"Let lights appear in the sky to separate the day from the night. Let them be signs to mark the seasons, days, and years. 15Let these lights in the sky shine down on the earth.\" And that is what happened. 16God made two great lights—the larger one to govern the day, and the smaller one to govern the night. He also made the stars. 17God set these lights in the sky to light the earth, 18to govern the day and night, and to separate the light from the darkness. And God saw that it was good. 19And evening passed and morning came, marking the fourth day. 20Then God said, \"Let the waters swarm with fish and other life. Let the skies be filled with birds of every kind.\" 21So God created great sea creatures and every living thing that scurries and swarms in the water, and every sort of bird—each producing offspring of the same kind. And God saw that it was good. 22Then God blessed them, saying, \"Be fruitful and multiply. Let the fish fill the seas, and let the birds multiply on the earth.\" 23And evening passed and morning came, marking the fifth day. 24Then God said, \"Let the earth produce every sort of animal, each producing offspring of the same kind—livestock, small animals that scurry along the ground, and wild animals.\" And that is what happened. 25God made all sorts of wild animals, livestock, and small animals, each able to produce offspring of the same kind. And God saw that it was good. 26Then God said, \"Let us make human beings in our image, to be like us. They will reign over the fish in the sea, the birds in the sky, the livestock, all the wild animals on the earth, and the small animals that scurry along the ground.\" 27So God created human beings in his own image. In the image of God he created them; male and female he created them. 28Then God blessed them and said, \"Be fruitful and multiply. Fill the earth and govern it. Reign over the fish in the sea, the birds in the sky, and all the animals that scurry along the ground.\" 29Then God said, \"Look! I have given you every seed-bearing plant throughout the earth and all the fruit trees for your food. 30And I have given every green plant as food for all the wild animals, the birds in the sky, and the small animals that scurry along the ground—everything that has life.\" And that is what happened. 31Then God looked over all he had made, and he saw that it was very good! And evening passed and morning came, marking the sixth day.", 
       "image": "https://lh3.googleusercontent.com/drive-viewer/AEYmBYTbqvZLg2HbfWNeQQD_1J5bzUKplfUft6ZxkHdMgWvDCqvparG1vtmf13qvSN-S3N-NBYczFrqZLBFmVm2T3sKUuvq9zw=s1600",
+      "fit": "cover",
+      "position": "center",
       "metadata": {
         "author": "Moses",
         "categories": ["Old Testament", "Creation"]
+      }
+    },
+    {
+      "title": "The Fall",
+      "reference": "Luke 2:1-20",
+      "content": "In those days, Caesar Augustus issued a decree that a census should be taken of the entire Roman world...",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQblaFoxHhWhjfymijRsKX5d2AhjjZGdBYwCXVVfTi4vVotzDiQZaHtav7w_hbxFW9SgHpsLKmPFUZyPBtduzlXVSq4-A=s2560",
+      "fit": "cover",
+      "position": "center",
+      "metadata": {
+        "author": "Luke",
+        "categories": ["", "old Testament"]
       }
     },
     {
@@ -16,6 +30,8 @@
       "reference": "Genesis 6:9-9:17",
       "content": "God instructed Noah to build an ark and bring two of every kind of animal...",
       "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYTqxczPyEZqPWk7sVyuJa9urOMH0AEPwxSi53navJyTocegpTIjO5mgvLYaq1artGITuclyTdIogR8t8AGAiBRDjiYf=s1600",
+      "fit": "cover",
+      "position": "center",
       "metadata": {
         "author": "Moses",
         "categories": ["Divine Intervention", "Old Testament", "Judgement"]
@@ -26,9 +42,23 @@
       "reference": "Exodus 20:1-17",
       "content": "And God spoke all these words: 'I am the Lord your God, who brought you out of Egypt...'",
       "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "fit": "cover",
+      "position": "center",
       "metadata": {
         "author": "Moses",
         "categories": ["Law", "Covenant", "Old Testament"]
+      }
+    },
+    {
+      "title": "Sodom and Gamorrah",
+      "reference": "Luke 2:1-20",
+      "content": "In those days, Caesar Augustus issued a decree that a census should be taken of the entire Roman world...",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQemKjcFL_sW0ni3mXGO7xrk1V6XKMpmk6wmYHs37dtmoo54Loi6tZIvVNpPIld0tp2uUQY_mbQX1Hd4ECk3nrFAyqZTA=s2560",
+      "fit": "",
+      "position": "center",
+      "metadata": {
+        "author": "Luke",
+        "categories": ["Judgement", "old Testament", "Deliverance"]
       }
     },
     {
@@ -36,29 +66,36 @@
       "reference": "1 Samuel 17:1-58",
       "content": "The Philistine giant Goliath challenged the Israelites, but the young shepherd David defeated him with a sling and a stone...",
       "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYTQy77chGZAkevYlRlg3d6faMJkjsrTyzCgbR7b44harSr9JsbJIgUF9JJOrT6Qza1YYNEi607nxnjLbiLMmjriCanQ=s1600",
+      "fit": "cover",
+      "position": "70% 100%",
       "metadata": {
         "author": "Unknown",
         "categories": ["Battle", "Faith"]
       }
     },
-    {
-      "title": "The Birth of Jesus",
-      "reference": "Luke 2:1-20",
-      "content": "In those days, Caesar Augustus issued a decree that a census should be taken of the entire Roman world...",
-      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
-      "metadata": {
-        "author": "Luke",
-        "categories": ["Christmas", "New Testament"]
-      }
-    },
+    
     {
       "title": "The Good Samaritan",
       "reference": "Luke 10:25-37",
       "content": "A man was going down from Jerusalem to Jericho when he was attacked by robbers. A priest and a Levite passed by, but a Samaritan helped him...",
       "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "fit": "cover",
+      "position": "center",
       "metadata": {
         "author": "Luke",
         "categories": ["Parable", "Forgiveness"]
+      }
+    },
+    {
+      "title": "The Resurrection",
+      "reference": "1 Samuel 17:1-58",
+      "content": "The Philistine giant Goliath challenged the Israelites, but the young shepherd David defeated him with a sling and a stone...",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYTxGpEHsIn86UAgkqzFnNzb3U8BIIlsGI51b3WiZc4jAjv6jQ764zk4guVtdHDaEqjxeBm21rJA3Hc9U-QARgHhSVbX=s1600",
+      "fit": "cover",
+      "position": "center",
+      "metadata": {
+        "author": "Unknown",
+        "categories": ["Battle", "Faith", "Resurrection", "prophecy"]
       }
     },
     {
@@ -66,6 +103,8 @@
       "reference": "Exodus 3:1-15",
       "content": "Moses was tending the flock of Jethro when he saw a burning bush. God spoke to him and revealed His name...",
       "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "fit": "cover",
+      "position": "center",
       "metadata": {
         "author": "Moses",
         "categories": ["Encounter", "Divine Intervention", "Old Testament"]
@@ -76,6 +115,8 @@
       "reference": "Luke 15:11-32",
       "content": "A man had two sons. The younger one asked for his share of the inheritance, wasted it, and returned home repentant...",
       "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "fit": "cover",
+      "position": "center",
       "metadata": {
         "author": "Jesus",
         "categories": ["Parable", "Forgiveness", "Repentance"]
@@ -85,17 +126,33 @@
       "title": "The Exodus",
       "reference": "Exodus 12:29-42",
       "content": "God brought the Israelites out of Egypt with signs and wonders, and they celebrated the Passover...",
-      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYTUSVS4pd4Jj_ZhQjO5UAYDXsTOOBgJUUkbdeXumtJsFme2EO4b8t1NLd4Sy5ZiX5Q9rZX5YCXq0AfiFWmNqmjGhyjA=s1600",
+      "fit": "cover",
+      "position": "100% 00%",
       "metadata": {
         "author": "Moses",
-        "categories": ["Deliverance", "Divine Intervention", "Old Testament"]
+        "categories": ["Deliverance", "Divine Intervention", "Old Testament", "Faithfulness"]
+      }
+    },
+    {
+      "title": "The nativity of Jesus",
+      "reference": "Matthew 5-7",
+      "content": "Jesus delivered the Beatitudes and other teachings on a mountainside, emphasizing love, humility, and righteousness...",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYTyYJ418bW3Y-pimUh3Dghifpi7iiAM-33CU5lC9l2L9lTghK37vz-HqG8phAe3SQ-BMt-sZsPcNInbsMnyfh056B5m=s1600",
+      "fit": "cover",
+      "position": "center",
+      "metadata": {
+        "author": "Matthew",
+        "categories": ["Miracle", "New Testament"]
       }
     },
     {
       "title": "The Sermon on the Mount",
       "reference": "Matthew 5-7",
       "content": "Jesus delivered the Beatitudes and other teachings on a mountainside, emphasizing love, humility, and righteousness...",
-      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYRV0xUGePVU8bXp4VaT0z0N7E4cLEPfPpokyng25hMV4bHaVEEg_zcC5VfYpiOyxKfPxQvCg-BQCkfSBIP_oCVMzeakEA=s2560",
+      "fit": "cover",
+      "position": "center",
       "metadata": {
         "author": "Matthew",
         "categories": ["Teaching", "New Testament"]
@@ -106,26 +163,80 @@
       "reference": "Matthew 14:13-21",
       "content": "Jesus fed a large crowd with five loaves and two fish, demonstrating His miraculous power...",
       "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "fit": "cover",
+      "position": "center",
       "metadata": {
         "author": "Matthew",
         "categories": ["Miracle", "New Testament"]
       }
     },
     {
+      "title": "The story of Ruth",
+      "reference": "Matthew 14:13-21",
+      "content": "Jesus fed a large crowd with five loaves and two fish, demonstrating His miraculous power...",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYT_Mp0R9vwyqhKu4wd1ZdNBXpzgZXS3JY3qRl5eyFpixU7yvqq4DizhYkbOwQXxNoAZoYUrwqUNHO6GrAyNCOrzsBMz=s1600",
+      "fit": "cover",
+      "position": "center",
+      "metadata": {
+        "author": "Matthew",
+        "categories": ["Deliverance", "old Testament", "Faithfulness"]
+      }
+    },
+    {
       "title": "Daniel in the Lion's Den",
       "reference": "Daniel 6:1-28",
       "content": "Daniel, a faithful servant of God, was thrown into a den of lions but was protected by God's angels...",
-      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQwjKnXpoZTHDfMzqoiX78lL-GaD0zotTOfT-FqyGJi5ZNb57jNjeRd1Xl5qDM8uELi6uS8MVztarelLTQeLBNiJrFsYw=s1600",
+      "fit": "cover",
+      "position": "center",
       "metadata": {
         "author": "Daniel",
-        "categories": ["Faithfulness", "Divine Intervention", "Old Testament"]
+        "categories": ["Faithfulness", "Divine Intervention", "Old Testament", "Deliverance"]
+      }
+    },
+    {
+      "title": "The Furnace",
+      "reference": "Daniel 6:1-28",
+      "content": "Daniel, a faithful servant of God, was thrown into a den of lions but was protected by God's angels...",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYTqZWTDom9VQKzmurIyEYUXsKMzCWrRJ7JYFswZcDF2tItYrVgSvWjT_pu14w4u4XKWXnkVfwWcwWwdLZtpkOkPD8cGVg=s2560",
+      "fit": "cover",
+      "position": "center",
+      "metadata": {
+        "author": "Daniel",
+        "categories": ["Faithfulness", "Divine Intervention", "Old Testament", "Deliverance"]
+      }
+    },
+    {
+      "title": "The Rich and the poor man",
+      "reference": "Daniel 6:1-28",
+      "content": "Daniel, a faithful servant of God, was thrown into a den of lions but was protected by God's angels...",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYTCckg1fz-tkNSUbPNuKBtrYeIgUWMb_blCj-nKEaT-JiwqjX9B7cHs-GBbb-JrhjwB9Nm6NmKPAPtUTTfY59lCdmnkMw=s1600",
+      "fit": "cover",
+      "position": "center",
+      "metadata": {
+        "author": "Daniel",
+        "categories": ["new Testament", "parable"]
+      }
+    },
+    {
+      "title": "The Tower of babel",
+      "reference": "Matthew 5-7",
+      "content": "Jesus delivered the Beatitudes and other teachings on a mountainside, emphasizing love, humility, and righteousness...",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYTXmQQopz6YAG5ygy_934V9rZLxXRtC48zjCwqxjjXRzc8XOxj2lHu7TZvNOvLGQP04HpcBpwq2UePUAOmOBDs9_oBhqQ=s1600",
+      "fit": "cover",
+      "position": "center",
+      "metadata": {
+        "author": "Matthew",
+        "categories": ["Judgement", "old Testament"]
       }
     },
     {
       "title": "Jonah and the Big Fish",
       "reference": "Jonah 1:1-17; 2:1-10",
       "content": "God called Jonah to go to Nineveh, but he tried to escape. A big fish swallowed him, and he prayed for deliverance...",
-      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYR8eyTzU9_A8_j69sWYBjEgciQ673-696BrUZS1RfxuNyfVafrpXRikoYdSk5VBF7NYA2WkU_Zpaj2_91mr-NnF0zT-og=s1600",
+      "fit": "cover",
+      "position": "40% 100%",
       "metadata": {
         "author": "Jonah",
         "categories": ["Repentance", "Divine Intervention", "Old Testament"]
@@ -136,6 +247,8 @@
       "reference": "Matthew 17:1-13",
       "content": "Jesus took Peter, James, and John up a mountain, where He was transfigured before them, revealing His divine glory...",
       "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "fit": "cover",
+      "position": "center",
       "metadata": {
         "author": "Matthew",
         "categories": ["Revelation", "New Testament"]
@@ -146,6 +259,8 @@
       "reference": "John 11:1-44",
       "content": "Jesus raised Lazarus, who had been dead for four days, demonstrating His power over death...",
       "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "fit": "cover",
+      "position": "center",
       "metadata": {
         "author": "John",
         "categories": ["Miracle", "New Testament"]
@@ -156,6 +271,8 @@
       "reference": "John 9:1-41",
       "content": "Jesus healed a man born blind, revealing Himself as the light of the world...",
       "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "fit": "cover",
+      "position": "center",
       "metadata": {
         "author": "John",
         "categories": ["Miracle", "New Testament"]
@@ -166,6 +283,8 @@
       "reference": "Matthew 26:17-30",
       "content": "Jesus shared a Passover meal with His disciples, instituting the Lord's Supper and predicting His betrayal...",
       "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "fit": "cover",
+      "position": "center",
       "metadata": {
         "author": "Matthew",
         "categories": ["Passion", "New Testament"]
@@ -176,6 +295,20 @@
       "reference": "Luke 23:26-49",
       "content": "Jesus was crucified on the cross, bearing the sins of humanity and offering salvation to all who believe...",
       "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "fit": "cover",
+      "position": "center",
+      "metadata": {
+        "author": "Luke",
+        "categories": ["Passion", "New Testament"]
+      }
+    },
+    {
+      "title": "Abraham & Issac",
+      "reference": "Luke 23:26-49",
+      "content": "Jesus was crucified on the cross, bearing the sins of humanity and offering salvation to all who believe...",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYTWmn47rsIH0HrThCu2q9jid0-HWUreapf-M6gpsuWvJW2EDANZjcg_pcG0paFSGweqnKFgiYxuG3FvRvqY0kkjOQpm=s1600",
+      "fit": "cover",
+      "position": "center",
       "alt":"The Crucifixion",
       "metadata": {
         "author": "Luke",
@@ -183,13 +316,15 @@
       }
     },
     {
-      "title": "The Resurrection",
-      "reference": "Matthew 28:1-10",
+      "title": "The Writing on the wall",
+      "reference": "Daniel 6:1-28",
       "content": "On the third day, Jesus rose from the dead, defeating sin and death and bringing hope to the world...",
-      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYT0UD2D6BbtpcZObtbm07yaJoQLHllX3yR9-NX7ozt3XNPPZ6oytiJ-HB26JBp27kDVzcMWUaM0N0Z_ucMphgiMgyXHNw=s1600",
+      "fit": "cover",
+      "position": "center",
       "metadata": {
         "author": "Matthew",
-        "categories": ["Resurrection", "New Testament"]
+        "categories": ["Judgement", "old Testament"]
       }
     }
   ]
