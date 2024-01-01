@@ -1,3 +1,5 @@
+
+
 let storiesArray;
 let main_text = '';
 let currCategory = '';
@@ -15,13 +17,13 @@ function displayStories(stories) {
   // Your logic to display or use the processed data goes here
   var main_text = '';
   for (var i = 0; i < stories.length; i++) {
-    console.log('here');
-    console.log(stories[i].position);
+    // console.log('here');
+    // console.log(stories[i].position);
     main_text += 
-    `<div class="stories" onclick = openPopup()>` +
+    `<div class="stories" onclick = "openPopup(); getVerse(${i});">` +
       `<img class="poster" src="${stories[i].image}" alt="404 image not found" onclick="showStory(${i})" style="object-fit:${stories[i].fit}; object-position:${stories[i].position};"> ` +
       `<div class="title">` +
-        `<p>${stories[i].title}</p>` +
+        `<p name ='title'>${stories[i].title}</p>` +
       `</div>
     </div>`;
   }
@@ -157,7 +159,7 @@ function changeTitle(newTItle)
 let scrollContainer;
 
 function checkScreenSizeAndScroll() {
-  console.log('scroll');
+  // console.log('scroll');
   let screenWidth = window.innerWidth;
   scrollContainer = document.querySelector("nav");
 
@@ -188,5 +190,24 @@ window.onload = checkScreenSizeAndScroll;
 window.onresize = checkScreenSizeAndScroll;
 
 
-
+function getVerse(index) {
+  console.log(storiesArray[index].content);
+  fetch("http://localhost:3000/verse", {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json', // Uncomment this line
+    },
+    body: JSON.stringify({
+      verse:JSON.stringify(storiesArray[index].verse), //verse is not yet a thing
+    }),
+  })
+  .then(response => response.json())
+  .then(result => {
+    console.log('Success:', result);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+  console.log('confirm: getVerse');
+}
 
