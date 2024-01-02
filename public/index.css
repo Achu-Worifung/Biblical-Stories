@@ -40,18 +40,6 @@ header
     
 }
 
-
-
-/* .container
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
-} */
 .container
 {
     display: flex;
@@ -85,8 +73,6 @@ header
 
 main
 {
-    /* margin-left:16% ; */
-    /* margin-left: max(101px, 16%); */
     margin: 0;
     padding: 0;
     width: 100%;
@@ -94,14 +80,12 @@ main
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* justify-content: last baseline; */
     flex-grow: 1;
     align-items: baseline;
-    /* overflow-x: hidden; */
+
 }
 .target
 {
-    /* color:rebeccapurple; */
     font-size: 10px;
     background-image: url("biblelogo.svg");
     background-position:center;
@@ -126,8 +110,6 @@ nav
     margin-left: 0;
     width: 15%;
     color:var(--text-color);
-    /* color: purple; */
-    /* background-color: purple; */
     background-color: var(--nav-color);
     margin: 0;
     padding: 0;
@@ -137,7 +119,6 @@ nav
     position: fixed;
     overflow-x: hidden;
     min-width: 100px;
-    /* font-size: .1em; */
     
 }
 .biblicalVerse
@@ -168,12 +149,6 @@ nav button:hover{
     background-color: var(--hover-color);
 }
 
-
-/*
-nav button {
-    transform: scale(0.2); 
-    transition: transform 0.3s; 
-}   */
 
 svg
 {
@@ -222,25 +197,13 @@ li a, .dropbtn {
     display: block;
   }
  
-/* Reset the scale on the buttons on hover */
-/* nav:hover
-{
-    width: fit-content;
-} */
 
 .poster 
 {
-    /* background-color: black; */
-    /* border-radius: 10px 10px 0 0; */
+
     width: 100%;
     height: 80%;
     top:0;
-    /* object-fit: cover; */
-    /* object-fit: contain; */
-    /* object-fit: scale-down; */
-    /* object-fit: none; */
-    /* object-position: 50% 20%; */
-    /* object-fit: center; */
     
 }
 .title p
@@ -271,8 +234,6 @@ li a, .dropbtn {
     background-color: rgb(0,0,0);  
     background-color: rgba(0,0,0,0.4); 
     
-    /* background-color: red; */
-    /* background-color: blue; */
 }
 
 /* The popup content */
@@ -285,12 +246,12 @@ li a, .dropbtn {
     width: 60%; 
     height: 80%;
     overflow: auto;
-    /* background-color: red; */
+    
 }
 .close {
     color: #aaaaaa;
     
-    font-size: 28px; /* Adjust this value to change the size of the close button */
+    font-size: 28px;
     font-weight: bold;
 }
 .close:hover {
@@ -307,7 +268,9 @@ li a, .dropbtn {
 .displayImage{
     float: left;
     margin: 5px;
-    width: 50%;
+    width: 60%;
+    max-width: auto;
+    height: auto;
 
 }
 hr

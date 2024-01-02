@@ -13,16 +13,15 @@
             height: 100vh;
             flex-direction: column;
         }
-        div{
+        .suggest{
             border-radius: 10px;
-            /* width: fit-content; */
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             width: max(50%, 300px);
             height: auto;
-            /* text-align: center; */
+           
             border: 1px solid black;
             margin: 3px;
         }
@@ -43,8 +42,6 @@
             border: solid 2px white;
         }
         section {
-            
-            /* width: 100%; */
             margin: 1rem ;
             display: flex;
             justify-content: center;
@@ -52,8 +49,8 @@
             align-items: baseline;
         }
         label, input {
-                margin: 0.5rem;
-                /* background-color: red; */
+            margin: 0.5rem;
+               
         }
         object
         {
@@ -70,14 +67,14 @@
        
         
 
-/* Media query for small screens */
+/* for small screens */
  @media screen and (max-width: 650px) {
   section {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center elements horizontally */
+    flex-direction: column; 
+    align-items: center; 
   }
 
-  /* Add some spacing between stacked elements */
+  
   section label,
   section input {
     margin-bottom: 0.5rem;
@@ -95,7 +92,7 @@
     
     
     <h2>Biblic Story Suggestion</h2>
-    <div>
+    <div class="suggest">
         <form action="http://localhost:3000/submit-data" method="POST">
             <section class="email">
                 <label>Email Address</label>
@@ -124,141 +121,11 @@
         </form>
         
     </div>
-    <footer>
+    <div>
         <hr>           
-         <a href="index.html">Home</a> | <a href="aboutUs.html">About Us |</a>  <a href="Sugestion.html">Suggest A Story</a> | <a href         
-      </footer>
+         | <a href="index.html">Home</a> | <a href="aboutUs.html">About Us |</a>  <a href="Sugestion.html">Suggest A Story</a> | <a href         
+    </div>
 
-    <script>
-        const bibleBooksByChapters = new Map([
-  // Old Testament
-  ["Genesis", 50],
-  ["Exodus", 40],
-  ["Leviticus", 27],
-  ["Numbers", 36],
-  ["Deuteronomy", 34],
-  ["Joshua", 24],
-  ["Judges", 21],
-  ["Ruth", 4],
-  ["1 Samuel", 31],
-  ["2 Samuel", 24],
-  ["1 Kings", 22],
-  ["2 Kings", 25],
-  ["1 Chronicles", 29],
-  ["2 Chronicles", 36],
-  ["Ezra", 10],
-  ["Nehemiah", 13],
-  ["Esther", 10],
-  ["Job", 42],
-  ["Psalms", 150],
-  ["Proverbs", 31],
-  ["Ecclesiastes", 12],
-  ["Song of Solomon", 8],
-  ["Isaiah", 66],
-  ["Jeremiah", 52],
-  ["Lamentations", 5],
-  ["Ezekiel", 48],
-  ["Daniel", 12],
-  ["Hosea", 14],
-  ["Joel", 3],
-  ["Amos", 9],
-  ["Obadiah", 1],
-  ["Jonah", 4],
-  ["Micah", 7],
-  ["Nahum", 3],
-  ["Habakkuk", 3],
-  ["Zephaniah", 3],
-  ["Haggai", 2],
-  ["Zechariah", 14],
-  ["Malachi", 4],
-
-  // New Testament
-  ["Matthew", 28],
-  ["Mark", 16],
-  ["Luke", 24],
-  ["John", 21],
-  ["Acts", 28],
-  ["Romans", 16],
-  ["1 Corinthians", 16],
-  ["2 Corinthians", 13],
-  ["Galatians", 6],
-  ["Ephesians", 6],
-  ["Philippians", 4],
-  ["Colossians", 4],
-  ["1 Thessalonians", 5],
-  ["2 Thessalonians", 3],
-  ["1 Timothy", 6],
-  ["2 Timothy", 4],
-  ["Titus", 3],
-  ["Philemon", 1],
-  ["Hebrews", 13],
-  ["James", 5],
-  ["1 Peter", 5],
-  ["2 Peter", 3],
-  ["1 John", 5],
-  ["2 John", 1],
-  ["3 John", 1],
-  ["Jude", 1],
-  ["Revelation", 22],
-]);
-
-// Example: Log the number of chapters for each book
-// bibleBooksByChapters.forEach((chapters, book) => {
-//   console.log(`${book}: ${chapters} chapters`);
-// });
-
-let options =``;
-
-// Assume you have the Map definition and options building logic here
-
-// Iterate through the book names using a for...of loop
-for (const book of bibleBooksByChapters.keys()) {
-  options += `<option value="${book}">${book}</option>`;
-}
-
-document.querySelector("select").innerHTML = options;
-document.querySelector("select").addEventListener("change", getChapter);
-
-
-getChapter();
-function getChapter() {
-  console.log("here");
-  let selectedBook = document.querySelector("select").value;
-  let chapters = bibleBooksByChapters.get(selectedBook);
-  console.log(chapters);
-  let chapterOptions = ``;
-
-  for (let chapter = 1; chapter <= chapters; chapter++) {
-    chapterOptions += `<option value="${chapter}">${chapter}</option>`;
-  }
-
-  document.querySelector(".chapters").innerHTML = chapterOptions;
-}
- 
-
-
-function submitForm() {
-    fetch('/submit-data', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json', // Uncomment this line
-        },
-        body: JSON.stringify({
-            email: document.querySelector('.email'),
-            Book: document.querySelector('.book'),
-            Chapters: document.querySelector('.chapter'),
-            category: document.querySelector('.email')
-        }),
-    })
-    .then(response => response.json())
-    .then(result => {
-        console.log('Success:', result);
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
-}
-
-    </script>
+    <script src="suggestion.js"> </script>
 </body>
 </html>

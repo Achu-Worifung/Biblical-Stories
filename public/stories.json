@@ -42,7 +42,7 @@
       "title": "The Ten Commandments",
       "reference": "Exodus 20:1-17",
       "content": "And God spoke all these words: 'I am the Lord your God, who brought you out of Egypt...'",
-      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQxyfl22-F2TfKNIsPkLvARQdmZ92kOyPPlTRxJzLLSZgbu2wkavmYTK1fv1TApcGZE1qMcs6ajt-hZLYEvdl-ey3C4lw=s1600",
       "fit": "cover",
       "position": "center",
       "metadata": {
@@ -52,7 +52,7 @@
     },
     {
       "title": "Sodom and Gamorrah",
-      "reference": "Luke 2:1-20",
+      "reference": "Genesis 18:16-33; Genesis 19:38",
       "content": "In those days, Caesar Augustus issued a decree that a census should be taken of the entire Roman world...",
       "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQemKjcFL_sW0ni3mXGO7xrk1V6XKMpmk6wmYHs37dtmoo54Loi6tZIvVNpPIld0tp2uUQY_mbQX1Hd4ECk3nrFAyqZTA=s2560",
       "fit": "",
@@ -77,13 +77,13 @@
     
     {
       "title": "The Good Samaritan",
-      "reference": "Luke 10:25-37",
+      "reference": "Matthew 28:1-15",
       "content": "A man was going down from Jerusalem to Jericho when he was attacked by robbers. A priest and a Levite passed by, but a Samaritan helped him...",
-      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQxyfl22-F2TfKNIsPkLvARQdmZ92kOyPPlTRxJzLLSZgbu2wkavmYTK1fv1TApcGZE1qMcs6ajt-hZLYEvdl-ey3C4lw=s1600",
       "fit": "cover",
       "position": "center",
       "metadata": {
-        "author": "Luke",
+        "author": "Matthew",
         "categories": ["Parable", "Forgiveness"]
       }
     },
@@ -101,9 +101,9 @@
     },
     {
       "title": "Moses and the Burning Bush",
-      "reference": "Exodus 3:1-15",
+      "reference": "Exodus 3:1-22",
       "content": "Moses was tending the flock of Jethro when he saw a burning bush. God spoke to him and revealed His name...",
-      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQxyfl22-F2TfKNIsPkLvARQdmZ92kOyPPlTRxJzLLSZgbu2wkavmYTK1fv1TApcGZE1qMcs6ajt-hZLYEvdl-ey3C4lw=s1600",
       "fit": "cover",
       "position": "center",
       "metadata": {
@@ -115,7 +115,7 @@
       "title": "The Prodigal Son",
       "reference": "Luke 15:11-32",
       "content": "A man had two sons. The younger one asked for his share of the inheritance, wasted it, and returned home repentant...",
-      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQxyfl22-F2TfKNIsPkLvARQdmZ92kOyPPlTRxJzLLSZgbu2wkavmYTK1fv1TApcGZE1qMcs6ajt-hZLYEvdl-ey3C4lw=s1600",
       "fit": "cover",
       "position": "center",
       "metadata": {
@@ -125,7 +125,7 @@
     },
     {
       "title": "The Exodus",
-      "reference": "Exodus 12:29-42",
+      "reference": "Exodus 12:29-51",
       "content": "God brought the Israelites out of Egypt with signs and wonders, and they celebrated the Passover...",
       "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYTUSVS4pd4Jj_ZhQjO5UAYDXsTOOBgJUUkbdeXumtJsFme2EO4b8t1NLd4Sy5ZiX5Q9rZX5YCXq0AfiFWmNqmjGhyjA=s1600",
       "fit": "cover",
@@ -160,10 +160,10 @@
       }
     },
     {
-      "title": "The Feeding of the 5,000",
+      "title": "Jesus feeds 5,000",
       "reference": "Matthew 14:13-21",
       "content": "Jesus fed a large crowd with five loaves and two fish, demonstrating His miraculous power...",
-      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQxyfl22-F2TfKNIsPkLvARQdmZ92kOyPPlTRxJzLLSZgbu2wkavmYTK1fv1TApcGZE1qMcs6ajt-hZLYEvdl-ey3C4lw=s1600",
       "fit": "cover",
       "position": "center",
       "metadata": {
@@ -173,7 +173,7 @@
     },
     {
       "title": "The story of Ruth",
-      "reference": "Matthew 14:13-21",
+      "reference": "Ruth 1:1-22; Ruth 2:1-23; Ruth 3:1-18;Ruth 4:1-16",
       "content": "Jesus fed a large crowd with five loaves and two fish, demonstrating His miraculous power...",
       "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYT_Mp0R9vwyqhKu4wd1ZdNBXpzgZXS3JY3qRl5eyFpixU7yvqq4DizhYkbOwQXxNoAZoYUrwqUNHO6GrAyNCOrzsBMz=s1600",
       "fit": "cover",
@@ -247,7 +247,7 @@
       "title": "The Transfiguration",
       "reference": "Matthew 17:1-13",
       "content": "Jesus took Peter, James, and John up a mountain, where He was transfigured before them, revealing His divine glory...",
-      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQxyfl22-F2TfKNIsPkLvARQdmZ92kOyPPlTRxJzLLSZgbu2wkavmYTK1fv1TApcGZE1qMcs6ajt-hZLYEvdl-ey3C4lw=s1600",
       "fit": "cover",
       "position": "center",
       "metadata": {
@@ -259,7 +259,7 @@
       "title": "Raising Lazarus from the Dead",
       "reference": "John 11:1-45",
       "content": "Jesus raised Lazarus, who had been dead for four days, demonstrating His power over death...",
-      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQxyfl22-F2TfKNIsPkLvARQdmZ92kOyPPlTRxJzLLSZgbu2wkavmYTK1fv1TApcGZE1qMcs6ajt-hZLYEvdl-ey3C4lw=s1600",
       "fit": "cover",
       "position": "center",
       "metadata": {
@@ -271,7 +271,7 @@
       "title": "The Healing of the Blind Man",
       "reference": "John 9:1-41",
       "content": "Jesus healed a man born blind, revealing Himself as the light of the world...",
-      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQxyfl22-F2TfKNIsPkLvARQdmZ92kOyPPlTRxJzLLSZgbu2wkavmYTK1fv1TApcGZE1qMcs6ajt-hZLYEvdl-ey3C4lw=s1600",
       "fit": "cover",
       "position": "center",
       "metadata": {
@@ -283,7 +283,7 @@
       "title": "The Last Supper",
       "reference": "Matthew 26:17-30",
       "content": "Jesus shared a Passover meal with His disciples, instituting the Lord's Supper and predicting His betrayal...",
-      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQxyfl22-F2TfKNIsPkLvARQdmZ92kOyPPlTRxJzLLSZgbu2wkavmYTK1fv1TApcGZE1qMcs6ajt-hZLYEvdl-ey3C4lw=s1600",
       "fit": "cover",
       "position": "center",
       "metadata": {
@@ -295,7 +295,7 @@
       "title": "The Crucifixion",
       "reference": "Luke 23:26-49",
       "content": "Jesus was crucified on the cross, bearing the sins of humanity and offering salvation to all who believe...",
-      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQPlIEQLiXbfxkpnXy5gthzU_1xC5wdushCnV4r6GWRv1CG4MY46RLeu401bWiZ5cE3wLhOkNV2mMjRqzwHOZ_Axx_OLg=s1600",
+      "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQxyfl22-F2TfKNIsPkLvARQdmZ92kOyPPlTRxJzLLSZgbu2wkavmYTK1fv1TApcGZE1qMcs6ajt-hZLYEvdl-ey3C4lw=s1600",
       "fit": "cover",
       "position": "center",
       "metadata": {
@@ -305,7 +305,7 @@
     },
     {
       "title": "Abraham & Issac",
-      "reference": "Luke 23:26-49",
+      "reference": "Genesis 22:1-19",
       "content": "Jesus was crucified on the cross, bearing the sins of humanity and offering salvation to all who believe...",
       "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYTWmn47rsIH0HrThCu2q9jid0-HWUreapf-M6gpsuWvJW2EDANZjcg_pcG0paFSGweqnKFgiYxuG3FvRvqY0kkjOQpm=s1600",
       "fit": "cover",

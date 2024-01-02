@@ -1,5 +1,4 @@
 
-
 let storiesArray;
 let main_text = '';
 let currCategory = '';
@@ -14,11 +13,8 @@ async function fetchData() {
 }
 
 function displayStories(stories) {
-  // Your logic to display or use the processed data goes here
   var main_text = '';
   for (var i = 0; i < stories.length; i++) {
-    // console.log('here');
-    // console.log(stories[i].position);
     main_text += 
     `<div class="stories" onclick = "openPopup(); getVerse(${i});">` +
       `<img class="poster" src="${stories[i].image}" alt="404 image not found" onclick="showStory(${i})" style="object-fit:${stories[i].fit}; object-position:${stories[i].position};"> ` +
@@ -34,7 +30,6 @@ function displayStories(stories) {
 
 async function execute() {
   await fetchData(); // Wait until fetchData() is done
-  // console.log(storiesArray); // Log the array to the console
   displayStories(storiesArray); // Call displayStories() after fetchData() is done
 }
 
@@ -81,12 +76,12 @@ function showResult(category) {
     for (var j = 0; j < storiesArray[i].metadata.categories.length; j++) {
       if(storiesArray[i].metadata.categories[j] === category) {
         main_text += 
-        `<div class="stories" onclick = showStory(${i})>` +
-        `<img class = poster src="${storiesArray[i].image}" alt="404 image not found">` +
-        `<div class="title">` +
+        `<div class="stories" onclick = "openPopup(); getVerse(${i});">` +
+      `<img class="poster" src="${storiesArray[i].image}" alt="404 image not found" onclick="showStory(${i})" style="object-fit:${storiesArray[i].fit}; object-position:${storiesArray[i].position};"> ` +
+      `<div class="title">` +
         `<p>${storiesArray[i].title}</p>` +
-        `</div>
-        </div>`;
+      `</div>
+    </div>`;
         
         
       }
@@ -101,7 +96,6 @@ function showResult(category) {
 
 function showStory(index)
 {
-  // <img class = poster src="${storiesArray[index].image}" alt="image.png" >
   let story = `
   <span class="close" onclick="closePopup(event)">&times;</span>
   <h2 class="displayHeading">${storiesArray[index].title} ( ${storiesArray[index].reference} )</h2>
@@ -113,38 +107,30 @@ function showStory(index)
   `;
   document.querySelector(".popup-content").innerHTML = story;
   openPopup();
-  // console.log(story);
-  // console.log("i am in story");
+  
    changeTitle(`| `+storiesArray[index].title);
 }
 
 
-            // Get the popup
+ // Get the popup
 var popup = document.getElementById("myPopup");
 
 // Get the close button
 var close = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the close button, close the popup
-// close.onclick = function() {
-//     popup.style.display = "none";
-// }
-
 // Function to open the popup
 function openPopup() {
-  // console.log("Popup opened");
     popup.style.display = "block";
 }
 
 function closePopup(event) {
-  // console.log(event.target.classList);
+  
 
   // Check if the target element has either "popup" or "close" class
   if (!(event.target.classList.contains("popup") || event.target.classList.contains("close"))) {
     return;
   }
 
-  // console.log("Popup closed");
   popup.style.display = "none";
   changeTitle(currCategory);
 }
@@ -159,7 +145,7 @@ function changeTitle(newTItle)
 let scrollContainer;
 
 function checkScreenSizeAndScroll() {
-  // console.log('scroll');
+ 
   let screenWidth = window.innerWidth;
   scrollContainer = document.querySelector("nav");
 
@@ -191,22 +177,19 @@ window.onresize = checkScreenSizeAndScroll;
 
 
 function getVerse(index) {
-  // console.log(storiesArray[index].content);
+  
   fetch("http://localhost:3000/verse", {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json', // Uncomment this line
+      'Content-Type': 'application/json', 
     },
     body: JSON.stringify({
-      verse:JSON.stringify(storiesArray[index].reference), //verse is not yet a thing
+      verse:JSON.stringify(storiesArray[index].reference), 
     }),
   })
   .then(response => response.json())
   .then(result => {
-    console.log('Success:', result);
-    console.log(storiesArray[index].reference);
     document.querySelector('.biblicalVerse').innerHTML = result.message ;
-    console.log(result.message);
   })
   .catch(error => {
     console.error('Error:', error);

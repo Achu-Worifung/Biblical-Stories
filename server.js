@@ -22,20 +22,10 @@ app.use(express.static('public'));
 // Route to handle form submissions
 app.post('/submit-data', function (req, res, next) {
   const formData = req.body;
-  
-    // Log the received data
-    // console.log('Received data:', formData);
-    
-    //get individual data
-    console.log('from body', formData.email);
-    
-    // Send a response back to the client
-    // res.json({ status: 'success', message: 'Data received successfully' });
-   
     
     sendTheMail(formData.email, formData.Book, formData.Chapters,formData.category);
     res.status(200).redirect('/sugestion.html');
-    // res.redirect('./sugestion.html');
+    
   });
   
   const port = 3000;
@@ -43,9 +33,10 @@ app.post('/submit-data', function (req, res, next) {
     console.log(`Server is running on http://localhost:${port}`);
   });
   
+
   function sendTheMail(useremail,book,chapter,category)
   {
-    //getting an invalid log in check password
+    
     var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -76,11 +67,8 @@ transporter.sendMail(mailOptions, function(error, info){
 });
 }
 
-// app
-//code for the api
 
-
-
+//bible api methods
 function getBibleVerse(verse) {
   return new Promise((resolve, reject) => {
     let option = {
@@ -101,29 +89,14 @@ function getBibleVerse(verse) {
       let story = "<div>";
       let info = JSON.parse(body);
       for (let i = 0; i < info.length; i++) {
-        // story += '<p>'+ info[i].text + '</p>';
         story +=  info[i].text ;
       }
       story += '</div>';
-      console.log(story);
 
       resolve(story);
     });
   });
 }
-
-// Example of using the getBibleVerse function with a Promise
-// getBibleVerse('Genesis 1:1-3')
-//   .then(story => {
-//     console.log('Story:', story);
-//   })
-//   .catch(error => {
-//     console.error('Error:', error);
-//   });
-
-
-// Example usage:
-// getBibleVerse('Genesis 6:1-22');
 
 app.post('/verse', async function(req, res, next) {
   try {
@@ -137,4 +110,3 @@ app.post('/verse', async function(req, res, next) {
   }
 });
 
-// app.listen(3000);
