@@ -15,15 +15,15 @@
     },
     {
       "title": "The Fall",
-      "reference": "Gensis 2:5-25; Genesis 3:1-24",
+      "reference": "Genesis 2:5-25; Genesis 3:1-24",
       "content": "In those days, Caesar Augustus issued a decree that a census should be taken of the entire Roman world...",
       "verse":"Gensis 2:5-25; Genesis 3:1-24",
       "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYQblaFoxHhWhjfymijRsKX5d2AhjjZGdBYwCXVVfTi4vVotzDiQZaHtav7w_hbxFW9SgHpsLKmPFUZyPBtduzlXVSq4-A=s2560",
       "fit": "cover",
       "position": "center",
       "metadata": {
-        "author": "Luke",
-        "categories": ["", "old Testament"]
+        "author": "moses",
+        "categories": ["Creation", "old Testament"]
       }
     },
     {
@@ -221,7 +221,7 @@
     },
     {
       "title": "The Tower of babel",
-      "reference": "Genesis 11:1-8",
+      "reference": "Genesis 11:1-9",
       "content": "Jesus delivered the Beatitudes and other teachings on a mountainside, emphasizing love, humility, and righteousness...",
       "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYTXmQQopz6YAG5ygy_934V9rZLxXRtC48zjCwqxjjXRzc8XOxj2lHu7TZvNOvLGQP04HpcBpwq2UePUAOmOBDs9_oBhqQ=s1600",
       "fit": "cover",
@@ -318,7 +318,7 @@
     },
     {
       "title": "The Writing on the wall",
-      "reference": "Daniel 6:1-28",
+      "reference": "Daniel 5:1-30",
       "content": "On the third day, Jesus rose from the dead, defeating sin and death and bringing hope to the world...",
       "image":"https://lh3.googleusercontent.com/drive-viewer/AEYmBYT0UD2D6BbtpcZObtbm07yaJoQLHllX3yR9-NX7ozt3XNPPZ6oytiJ-HB26JBp27kDVzcMWUaM0N0Z_ucMphgiMgyXHNw=s1600",
       "fit": "cover",

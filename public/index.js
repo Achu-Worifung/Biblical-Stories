@@ -205,7 +205,7 @@ function getVerse(index) {
   .then(result => {
     console.log('Success:', result);
     console.log(storiesArray[index].reference);
-    document.querySelector('.biblicalVerse').innerHTML = '<pre>' + result.message + '</pre>';
+    document.querySelector('.biblicalVerse').innerHTML = result.message ;
     console.log(result.message);
   })
   .catch(error => {

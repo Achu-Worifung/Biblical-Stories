@@ -87,7 +87,8 @@ function getBibleVerse(verse) {
       url: 'http://labs.bible.org/api/',
       qs: {
         'passage': verse,
-        'type': 'json'
+        'type': 'json',
+        'formatting':'full'
       }
     };
 
@@ -97,11 +98,13 @@ function getBibleVerse(verse) {
         return;
       }
 
-      let story = "";
+      let story = "<div>";
       let info = JSON.parse(body);
       for (let i = 0; i < info.length; i++) {
-        story += info[i].text + '\n';
+        // story += '<p>'+ info[i].text + '</p>';
+        story +=  info[i].text ;
       }
+      story += '</div>';
       console.log(story);
 
       resolve(story);

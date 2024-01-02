@@ -142,20 +142,15 @@ nav
 }
 .biblicalVerse
 {
-    width: 100%;
-    overflow-x: none;
     font-size: larger;
     font-family: Tahoma, Verdana, sans-serif;
-    word-wrap: break-word;
-
+    
 }
-/* pre
+.biblicalVerse p
 {
     width: 100%;
-    overflow-x: none;
-    word-wrap: break-word;
-
-} */
+    text-align: justify;
+}
 
 
 nav button
@@ -282,17 +277,16 @@ li a, .dropbtn {
 
 /* The popup content */
 .popup-content {
+    
     background-color: #fefefe;
     margin: 2% auto; 
     padding: 20px;
     border: 1px solid #888;
     width: 60%; 
     height: 80%;
-    overflow: auto; /* Use overflow to enable scrolling if content is too large */
-    overflow-x: none; /* Disable horizontal scrolling */
-    overflow-wrap: break-word; /* Enable word wrap */
+    overflow: auto;
+    /* background-color: red; */
 }
-
 .close {
     color: #aaaaaa;
     
