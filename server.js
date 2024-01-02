@@ -76,36 +76,62 @@ transporter.sendMail(mailOptions, function(error, info){
 });
 }
 
-app
+// app
 //code for the api
-// function getBibleVerse(verse) {
-// let option = {
-//   url:'http://labs.bible.org/api/',
-//   qs: {
-//     'passage': verse,
-//     'type': 'json'
 
-//   }
-// };
-// function callback(error, response, body) {
-//   if(!error && response.statusCode==200)
-//   {
-//     let info = JSON.parse(body);
-//     for(let i = 0; i < info.length; i++)
-//     {
-//       console.log(info[i].text);
-//     }
-//   }
-// }
-// request(option, callback);
-// }
+
+
+function getBibleVerse(verse) {
+  return new Promise((resolve, reject) => {
+    let option = {
+      url: 'http://labs.bible.org/api/',
+      qs: {
+        'passage': verse,
+        'type': 'json'
+      }
+    };
+
+    request(option, (error, response, body) => {
+      if (error || response.statusCode !== 200) {
+        reject('Error fetching Bible verse.');
+        return;
+      }
+
+      let story = "";
+      let info = JSON.parse(body);
+      for (let i = 0; i < info.length; i++) {
+        story += info[i].text + '\n';
+      }
+      console.log(story);
+
+      resolve(story);
+    });
+  });
+}
+
+// Example of using the getBibleVerse function with a Promise
+// getBibleVerse('Genesis 1:1-3')
+//   .then(story => {
+//     console.log('Story:', story);
+//   })
+//   .catch(error => {
+//     console.error('Error:', error);
+//   });
+
+
 // Example usage:
 // getBibleVerse('Genesis 6:1-22');
 
-app.post('/verse', function(req, res, next)
-{
-  
-  let verse = req.body.verse;
-  console.log(verse);
+app.post('/verse', async function(req, res, next) {
+  try {
+    let verse = req.body.verse;
+    
+    let story = await getBibleVerse(verse);
+    res.json({ message: story });
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
 });
+
 // app.listen(3000);

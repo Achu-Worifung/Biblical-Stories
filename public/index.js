@@ -23,7 +23,7 @@ function displayStories(stories) {
     `<div class="stories" onclick = "openPopup(); getVerse(${i});">` +
       `<img class="poster" src="${stories[i].image}" alt="404 image not found" onclick="showStory(${i})" style="object-fit:${stories[i].fit}; object-position:${stories[i].position};"> ` +
       `<div class="title">` +
-        `<p name ='title'>${stories[i].title}</p>` +
+        `<p>${stories[i].title}</p>` +
       `</div>
     </div>`;
   }
@@ -107,7 +107,7 @@ function showStory(index)
   <h2 class="displayHeading">${storiesArray[index].title} ( ${storiesArray[index].reference} )</h2>
     
       <img src="${storiesArray[index].image}" class="displayImage" alt="404 image not found" >
-      ${storiesArray[index].content}
+      <div class = "biblicalVerse"></div>
     
     
   `;
@@ -191,23 +191,25 @@ window.onresize = checkScreenSizeAndScroll;
 
 
 function getVerse(index) {
-  console.log(storiesArray[index].content);
+  // console.log(storiesArray[index].content);
   fetch("http://localhost:3000/verse", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json', // Uncomment this line
     },
     body: JSON.stringify({
-      verse:JSON.stringify(storiesArray[index].verse), //verse is not yet a thing
+      verse:JSON.stringify(storiesArray[index].reference), //verse is not yet a thing
     }),
   })
   .then(response => response.json())
   .then(result => {
     console.log('Success:', result);
+    console.log(storiesArray[index].reference);
+    document.querySelector('.biblicalVerse').innerHTML = '<pre>' + result.message + '</pre>';
+    console.log(result.message);
   })
   .catch(error => {
     console.error('Error:', error);
   });
-  console.log('confirm: getVerse');
 }
 
