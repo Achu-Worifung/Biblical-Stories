@@ -6,17 +6,16 @@ let request = require('request');
 let url = require('url');
 const express = require('express');
 const cors = require('cors');
-const app = express();
-
+const path = require('path');
 const nodemailer = require('nodemailer');
+
+const app = express();
 const email = process.env.SENDER_EMAIL;
 const pass = process.env.SENDER_PASSWORD;
 
 app.use(cors());
 app.use(express.urlencoded());
 app.use(express.json()); // Add this line to parse JSON data
-
-app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 // Route to handle form submissions
@@ -110,3 +109,8 @@ app.post('/verse', async function(req, res, next) {
   }
 });
 
+//production script
+app.use(express.static('./public/index.html'));
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'public','index.html'));
+});
