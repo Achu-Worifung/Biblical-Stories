@@ -1,4 +1,5 @@
 
+
 let storiesArray;
 let main_text = '';
 let currCategory = '';
@@ -177,8 +178,9 @@ window.onresize = checkScreenSizeAndScroll;
 
 
 function getVerse(index) {
-  
-  fetch("http://localhost:3000/verse", {
+  // const port = process.env.PORT || 8080;
+  //if you have problem displaying text change port
+  fetch(`http://localhost:7777/verse`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json', 
