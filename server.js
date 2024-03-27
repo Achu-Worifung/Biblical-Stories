@@ -110,7 +110,7 @@ app.post('/verse', async function(req, res, next) {
 });
 
 //production script
-app.use(express.static('./public'));
+app.use(express.static('./public/index.html'));
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'public','index.html'));
 });
