@@ -1,13 +1,12 @@
-if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').config();
-}
+import dotenv from 'dotenv';
+dotenv.config();
 
-let request = require('request');
-let url = require('url');
-const express = require('express');
-const cors = require('cors');
-const path = require('path');
-const nodemailer = require('nodemailer');
+import request from 'request';
+import url from 'url';
+import express from 'express';
+import cors from 'cors';
+import path from 'path';
+import nodemailer from 'nodemailer';
 
 const app = express();
 const email = process.env.SENDER_EMAIL;
@@ -27,7 +26,8 @@ app.post('/submit-data', function (req, res, next) {
     
   });
   
-  const port = 3000;
+  const port = process.env.PORT || 8080;
+  app.set('port', process.env.PORT || 8080);
   app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
   });
@@ -110,7 +110,7 @@ app.post('/verse', async function(req, res, next) {
 });
 
 //production script
-app.use(express.static('./public/index.html'));
+app.use(express.static('./public'));
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'public','index.html'));
 });
