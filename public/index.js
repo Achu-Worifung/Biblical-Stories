@@ -176,25 +176,57 @@ function verticalScrollHandler(evt) {
 window.onload = checkScreenSizeAndScroll;
 window.onresize = checkScreenSizeAndScroll;
 
+async function getVerse(index) {
+  try {
+      const response = await fetch(`http://labs.bible.org/api/?passage=${storiesArray[index].reference}&formatting=full`);
+      
+      if (!response.ok) {
+          throw new Error('Error');
+      }
 
-function getVerse(index) {
-  // const port = process.env.PORT || 8080;
-  //if you have problem displaying text change port
-  fetch(`http://localhost:7777/verse`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json', 
-    },
-    body: JSON.stringify({
-      verse:JSON.stringify(storiesArray[index].reference), 
-    }),
-  })
-  .then(response => response.json())
-  .then(result => {
-    document.querySelector('.biblicalVerse').innerHTML = result.message ;
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
+      const htmlString = await response.text();
+
+      // Create a temporary div element to hold the HTML content
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = htmlString;
+
+      // Extract and decode the text content from all paragraphs
+      let story = '';
+      const paragraphs = tempDiv.querySelectorAll('p');
+      paragraphs.forEach(paragraph => {
+          const decodedText = paragraph.textContent;
+          story += decodedText + '\n\n';
+      });
+
+      // Wrap the story in <pre> tags to display as preformatted text
+      const preformattedStory = `<pre>${story}</pre>`;
+      document.querySelector('.biblicalVerse').innerHTML = preformattedStory;
+
+      return story;
+  } catch (error) {
+      console.error('An error occurred:', error);
+  }
 }
+
+
+// function getVerse(index) {
+//   // const port = process.env.PORT || 8080;
+//   //if you have problem displaying text change port
+//   fetch(`/verse`, {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json', 
+//     },
+//     body: JSON.stringify({
+//       verse:JSON.stringify(storiesArray[index].reference), 
+//     }),
+//   })
+//   .then(response => response.json())
+//   .then(result => {
+//     document.querySelector('.biblicalVerse').innerHTML = result.message ;
+//   })
+//   .catch(error => {
+//     console.error('Error:', error);
+//   });
+// }
 
